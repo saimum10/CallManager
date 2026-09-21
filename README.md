@@ -1,8 +1,6 @@
 # Call Manager
 
-A lightweight Material 3 Android app for managing call recording and
-per-SIM call forwarding. Built with Kotlin and Jetpack Compose.
-Requires Android 10 (API 29) or newer.
+A Android app for managing call recording and per-SIM call forwarding. Requires Android 10 (API 29) or newer.
 
 ## Features
 
@@ -16,7 +14,7 @@ Requires Android 10 (API 29) or newer.
 
 ## Use
 
-1. Download an release APK from hare **(https://github.com/saimum10/CallManager/releases/tag/v0.2.9)** page and install it
+1. Download an release APK from hare **[DOWNLOAD](https://github.com/saimum10/CallManager/releases/tag/v0.2.9)** page and install it
    (`universal` works on every phone;).
 2. **Recording tab:** turn on the master switch, allow the permissions,
    then choose Incoming and/or Outgoing.
@@ -43,4 +41,4 @@ Apache License 2.0
 
 ## Developed by
 
-Saimum & AI — [github.com/saimum10/CallManager](https://github.com/saimum10)
+Saimum & AI — [PROFILE](https://github.com/saimum10)
