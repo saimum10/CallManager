@@ -193,4 +193,3 @@ jobs:
 # Since this app has no native (C/C++) code, all 5 ABI-specific APKs are
 # currently byte-for-byte equivalent in functionality to the universal one;
 # the split is wired up because it's a real build requirement and is
-# already correct for whenever native code gets added later.
