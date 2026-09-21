@@ -1,0 +1,11 @@
+<resources>
+    <!--
+        Minimal platform theme used only for window attributes before Compose
+        takes over. Actual Material 3 color scheme/typography lives in
+        ui/theme/Theme.kt so we avoid pulling in the separate XML Material
+        Components library.
+    -->
+    <style name="Theme.CallManager" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>

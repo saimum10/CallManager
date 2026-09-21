@@ -1,0 +1,6 @@
+<resources>
+    <!-- No longer used by the adaptive icon itself (that now points at
+         @drawable/ic_launcher_background for the gradient) — kept in case
+         anything else wants a flat approximation of the icon's color. -->
+    <color name="ic_launcher_background">#1560D4</color>
+</resources>

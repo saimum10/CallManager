@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Every permission below is only ever requested at runtime when the
+        user turns call recording on — declaring them here just makes them
+        available to request; it does not grant or request anything itself.
+
+        Deliberately NOT declared: READ_CALL_LOG / PROCESS_OUTGOING_CALLS.
+        Both are Play-Store-restricted to default dialer/call-log apps.
+        Requesting them here purely to put a caller's number in a filename
+        would risk Play rejection under the Play-Store-safe design decision
+        — see RecordingFileNaming.kt for how naming works without them.
+    -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <!--
+        Normal (install-time-granted, not dangerous) permission needed for
+        AudioManager.setMode()/setSpeakerphoneOn() — see
+        RecordingSettings.forceSpeakerphoneWhileRecording.
+    -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application>
+        <service
+            android:name="com.saimum.callmanager.recording.CallRecordingService"
+            android:exported="false"
+            android:foregroundServiceType="microphone" />
+    </application>
+
+</manifest>
