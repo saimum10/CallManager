@@ -8,41 +8,27 @@ Requires Android 10 (API 29) or newer.
 
 **Call recording**
 - Record incoming and/or outgoing calls automatically
-- Recordings library with playback and delete
-- Auto-delete after 3 / 7 / 15 / 30 days, and an optional storage limit
-- Optional extra copy of each recording to a folder you choose
-- Optional "Force speakerphone while recording" for phones that capture silence
-- Warns when a recording finished but contains no audio
 
 **Call forwarding**
 - Manage forwarding per SIM (dual-SIM supported)
-- Forward always, when busy, when unanswered, or when unreachable
-- Live forwarding status from the network for "forward always"
 
-**General**
-- Light, dark, or system theme
-- Status screen with quick shortcuts to Recording and Forwarding
+**Radio info / phone info**
 
 ## Use
 
-1. Download an APK from the **Releases** page and install it
-   (`universal` works on every phone; release-build APKs are unsigned).
+1. Download an release APK from hare **(https://github.com/saimum10/CallManager/releases/tag/v0.2.9)** page and install it
+   (`universal` works on every phone;).
 2. **Recording tab:** turn on the master switch, allow the permissions,
    then choose Incoming and/or Outgoing.
-   While it is on, a small "Call recording is on" notification is shown.
-   After a reboot, open the app once to start it again.
 3. **Forwarding tab:** pick a SIM, choose when to forward, enter the
    number, and switch it on.
-4. **Settings:** file naming, auto-delete, storage limit, backup folder,
-   theme.
 
 Note: recent Android versions restrict access to call audio. On some
 phones recordings can come out silent; turning on "Force speakerphone
 while recording" often helps.
 
-## Permissions
+## Permission
 
-| Permission | Why |
 |---|---|
 | Microphone | Record call audio (required for recording) |
 | Phone state | Detect when a call starts and ends (required for recording) |
@@ -57,4 +43,4 @@ Apache License 2.0
 
 ## Developed by
 
-Saimum & AI — [github.com/saimum10/CallManager](https://github.com/saimum10/CallManager)
+Saimum & AI — [github.com/saimum10/CallManager](https://github.com/saimum10)
