@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fills the full 108x108dp adaptive-icon canvas — background layers are
+     always meant to bleed edge-to-edge, since the OS applies the mask
+     (circle/squircle/rounded-square/etc.) on top of this layer. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:type="linear"
+        android:angle="270"
+        android:startColor="#1180E2"
+        android:endColor="#1E5FC0" />
+</shape>

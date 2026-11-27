@@ -1,0 +1,13 @@
+<resources>
+    <string name="recording_notification_channel_name">Call recording</string>
+    <string name="recording_notification_channel_description">Shows that call recording is on, and when a call is actively being recorded</string>
+    <string name="recording_notification_title">Call Manager</string>
+    <string name="recording_notification_text">Recording active</string>
+    <string name="recording_listening_text">Call recording is on</string>
+    <string name="recording_notification_stop">Stop</string>
+    <string name="recording_result_channel_name">Recording results</string>
+    <string name="recording_result_channel_description">Notifies when a call recording finishes</string>
+    <string name="recording_result_saved_title">Recording saved</string>
+    <string name="recording_result_silent_title">Recording saved (no audio detected)</string>
+</resources>
+

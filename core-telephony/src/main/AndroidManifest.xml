@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Both requested at runtime only when the user first opens the
+        Forwarding tab / tries to change a forwarding setting — never at
+        app launch.
+
+        CALL_PHONE: needed to place the MMI/USSD codes (**21*NUMBER# etc.)
+        that actually set forwarding — this is a normal dangerous
+        permission, not Play-restricted like READ_CALL_LOG.
+
+        READ_PHONE_STATE: needed to enumerate active SIM slots via
+        SubscriptionManager so SIM 1 / SIM 2 can be told apart.
+    -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+</manifest>
+
